@@ -16,10 +16,10 @@ using MNIST dataset.
 -   MNIST data: http://yann.lecun.com/exdb/mnist/
 
 To run the pipeline for training and evaluation on VIME framwork, simply run 
-python3 -m main_vime.py or see jupyter-notebook tutorial of TimeGAN in tutorial_vime.ipynb.
+python3 -m main_vime.py or see jupyter-notebook tutorial of VIME in tutorial_vime.ipynb.
 
 Note that any model architecture can be used as the encoder and 
-predictor model such as CNNs. 
+predictor models such as CNNs. 
 
 ### Code explanation
 
@@ -27,8 +27,8 @@ predictor model such as CNNs.
 - Load and preprocess MNIST data to make it as tabular data
 
 (2) supervised_model.py
-- Define logistic regression, MLP, and XGBoost models
-- All of them are supervised model for classification
+- Define logistic regression, Multi-layer Perceptron (MLP), and XGBoost models
+- All of them are supervised models for classification
 
 (3) vime_self.py
 - Self-supervised learning part of VIME framework
@@ -42,18 +42,18 @@ predictor model such as CNNs.
 - Report the prediction performances of supervised-learning, Self-supervised part of VIME and entire VIME frameworks.
 
 (6) vime_utils.py
-- Some utility functions for metrics and VIME.
+- Some utility functions for metrics and VIME frameworks.
 
 ### Command inputs:
 
 -   iterations: Number of experiments iterations
 -   label_no: Number of labeled data to be used
--   model_name: supervised model name (mlp, logit, or xgboost)
--   p_m: corruption probability for self-supervised learning
--   alpha: hyper-parameter to control the weights of feature and mask losses
--   K: number of augmented samples
--   beta: hyperparameter to control supervised and unsupervised loss
--   label_data_rate: ratio of labeled data
+-   model_name: Supervised model name (e.g., mlp, logit, or xgboost)
+-   p_m: Corruption probability for self-supervised learning
+-   alpha: Hyper-parameter to control the weights of feature and mask losses
+-   K: Number of augmented samples
+-   beta: Hyperparameter to control supervised and unsupervised losses
+-   label_data_rate: Ratio of labeled data
 
 Note that hyper-parameters should be optimized for different datasets.
 
