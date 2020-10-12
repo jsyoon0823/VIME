@@ -194,12 +194,12 @@ if __name__ == '__main__':
   parser.add_argument(
       '--iterations',
       help='number of experiments iterations',
-      default=2,
+      default=10,
       type=int)
   parser.add_argument(
       '--model_name',
       choices=['logit','xgboost','mlp'],
-      default='logit',
+      default='xgboost',
       type=str)
   parser.add_argument(
       '--label_no',
