@@ -4,7 +4,7 @@ Authors: Jinsung Yoon, Yao Zhang, James Jordon, Mihaela van der Schaar
 
 Reference: Jinsung Yoon, Yao Zhang, James Jordon, Mihaela van der Schaar, 
 "VIME: Extending the Success of Self- and Semi-supervised Learning to Tabular Domain," 
-Neural Information Processing Systems (NeurIPS), 2019.
+Neural Information Processing Systems (NeurIPS), 2020.
  
 Paper Link: TBD
 
